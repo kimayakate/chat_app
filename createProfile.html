@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+    <head>
+    <meta name="viewport" content="width=device-width" initial scale="1.0">
+    <meta charset="utf-8">
+    <title> Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!-- <link rel="stylesheet" type="text/css" href="profileone.css"> -->
+         <!-- <link rel="stylesheet" type="text/css" href="profile.css"> -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  
+    </head>  
+    <body >  
+        <h1>Registration Form</h1>
+    <br>  
+ 
+        <div class="container">
+            <form class="CreateProfile-form">
+                
+                <h2 style="text-align: center;">CREATE ACCOUNT </h2><br><br>
+
+                  
+                <label>Profile Pic :</label><br><br>
+              
+                <div>
+                  <div class="row">
+                      <div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12 profile-badge">
+                          <!-- <img src="https://dummyimage.com/600x400/000/"> -->
+                          
+                          <div class="profile-pic">
+                           
+                                  <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
+                                  <input id="profile-image-upload" class="hidden" type="file" onchange="previewFile()" >
+                                  <div style="color:#999;" >  </div>
+                                  
+                          </div>
+                          <div class="user-detail text-center">
+                                                  
+           </div></div></div></div>
+                             
+              
+         
+                <p>Click on the "Choose File" button to upload a profile picture:</p><br><br>
+                <!-- <form action="/action_page.php"> -->
+                  <input type="file" id="myFile" name="filename">
+                  <!-- <img src="./images/profile-pic.jpg"  width="200" alt="">s -->
+                <!-- </form> -->
+                
+               
+                <br><br>
+                <label> First name :</label>         
+                <input type="text" name="firstname"  placeholder="First Name" size="15"/> <br> <br>  
+                <label> Middle name: </label>     
+                <input type="text" name="middlename" placeholder="Middle Name" size="15"/> <br> <br>  
+                <label> Last name: </label>         
+                <input type="text" name="lastname" placeholder="Last Name" size="15"/> <br> <br>  
+                <br>  
+                <label>   
+                Gender :  <br>
+                </label>  <br>
+                  <input type="radio" id="male" name="male" value="Male">
+                  <label for="male">Male</label><br>
+                  <input type="radio" id="female" name="female" value="Female">
+                  <label for="female">Female</label><br>
+                  <input type="radio" id="other" name="other" value="Other">
+                  <label for="other">Other</label>
+                <br><br> 
+                <label>
+                    Date of birth:<br><br>
+                </label>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+                <br><br>
+                <label>   
+                Phone :  
+                </label>  
+                <input type="text" name="country code"  value="+91" size="2"/>   
+                <input type="text" name="phone" size="10"/> <br> <br>  
+                <label>Address :</label>  
+                <br>  
+                <textarea cols="80" rows="5" value="address">  
+                </textarea>  
+                <br> <br>  
+                <label>Email :</label>  
+                <input type="email" id="email" name="email"/> <br>    
+                <br> <br>    
+                <p class="end-paragraph">
+                    By clicking Submit, you agree to our 
+                    <a href="/legal/terms/update" id="terms-link" target="_blank" rel="nofollow">Terms</a>
+                    , 
+                    <a href="/about/privacy/update" id="privacy-link" target="_blank" rel="nofollow">Data Policy</a>
+                    and 
+                    <a href="/policies/cookies/" id="cookie-use-link" target="_blank" rel="nofollow">Cookie Policy</a>
+                    . You may receive SMS notifications from us and can opt out at any time.
+                  
+                </p><br><br>
+
+                <input type="Button" class="btn btn-info" value="Update Profile">             
+                <input type="Button" class="btn btn-info" value="Submit"/>  
+                </form>  
+                
+    
+        </div>
+            
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="./script.js"></script>
+    </body>  
+    </html>  

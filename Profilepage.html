@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width" initial scale="1.0">
+    <meta charset="utf-8">
+    <title> Profile page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="./images/profile-pic.jpg"  width="200" alt="">
+            </div>
+            <div class="profile-nav-info">
+                <h3 class="user-name">Bright Code</h3>
+                <div class="address">
+                    <p class="state">New York</p>
+                    <span class="country">USA</span>
+                </div>
+            </div>
+            <div class="profile-option">
+                <div class="notification">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    
+                    <span class="alert-message">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-bd">
+            <div class="left-side">
+                <div class="profile-side">
+                    <p class="mobile-no"><i class="fa fa-phone" aria-hidden="true"></i>+91-9881524031</p>
+                    <p class="user-mail"><i class="fa fa-envelope" aria-hidden="true"></i>kimaya.kate@gmail.com</p>
+                    <div class="user-bio">
+                        <h3>Bio</h3>
+                        <p class="bio">Hey, I am kimaya kate,
+                            graduated recently ,
+                            My hobbies are drawing ,
+                            travelling & playing badminton .....
+                            
+                       
+                          
+                        </p>
+                    </div>
+                    <div class="profile-btn">
+                            <button class="chat-btn" onclick="openForm()"><i class="fa fa-comment" aria-hidden="true"></i> Chat</button>
+                          
+                            <button class="createbtn"><i class="fa fa-plus" aria-hidden="true"></i>Create</button>
+                    </div>
+                    <div class="user-rating">
+                        <h3 class="rating">4.5</h3>
+                        <div class="rate">
+                            <div class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <span class="no-user"><span>123</span>&nbsp;&nbsp;reviews</span>
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="nav">
+                    <form class="example" action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+<!--                     
+                    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="Search.." name="search2">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        </form> -->
+                    <ul>
+                        <li onclick="tabs(0)" class="user-post active">Posts</li>
+                        <li onclick="tabs(1)" onclick="tabs(0)"class="user-review">Reviews</li>
+                        <li onclick="tabs(2)" class="user-setting">Settings</li>
+                    </ul>
+                </div>
+              
+                <div class="profile-body">
+                    <div class="profile-posts tab">
+                        <h1> Your Posts</h1>
+                        
+
+                            <img src="./images/pic-1.jpg">
+                            <img src="./images/pic-2.jpg">
+                            <img src="./images/pic-3.jpeg">
+                            <img src="./images/pic-4.jpeg">
+                            <img src="./images/pic-5.jpg">
+                            <img src="./images/pic-6.jpg">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/StpojvYoxvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bi5PhlIQpwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nFjVlf2r9_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="profile-review tab">
+                        <h1> User Reviews</h1>
+                        <p> qwertyuiopsdfghjkl;zxcvbnmzxcvbnmsdfghjkertyu qwertyuiopsdfghjkl;zxcvbnmzxcvbnmsdfghjkertyu
+                            qwertyuiopsdfghjkl;zxcvbnmzxcvbnmsdfghjkertyu qwertyuiopsdfghjkl;zxcvbnmzxcvbnmsdfghjkertyu
+                            qwertyuiopsdfghjkl;zxcvbnmzxcvbnmsdfghjkertyu qwertyuiopsdfghjkl;zxcvbnmzxcvbnmsdfghjkertyu</p>
+
+                            
+                    </div>
+                    <div class="profile-setting tab">
+                        
+                        <p> Sign in to your  Account, and get the most out of all the  services you use.
+                             Your account helps you do more by personalizing your  experience and offering easy 
+                             access to your most important information from anywhere.
+
+                        </p><br>
+                            <h2>Account Settings</h2>
+                            <i class="fa fa-user" aria-hidden="true"></i> <p><a href="#">Personal and account information</a></p>
+                            <i class="fa fa-shield" aria-hidden="true"></i><p><a href="#">Password & security</a></p>
+                            <br><br>
+                            <h2>Preferences</h2>
+                            <i class="fa fa-globe" aria-hidden="true"></i><p><a href="#">Language & region</a></p>
+                            <i class="fa fa-bell" aria-hidden="true"></i><p><a href="#">Notifications</a></p>
+                            <br><br>
+                        <h2>Your Information</h2>
+                        <i class="fa fa-list" aria-hidden="true"></i><p><a href="#">Activity log</a></p>
+                        <i class="fa fa-address-card-o" aria-hidden="true"></i><p><a href="#">Access information</a></p> 
+                        <br><br>
+                        <h2>Audience & visibility</h2>
+                        <i class="fa fa-user" aria-hidden="true"></i><p><a href="#">Profile locking</a></p> 
+                        <i class="fa fa-search" aria-hidden="true"></i><p><a href="#">How people can find & contact you</a></p> 
+                        <i class="fa fa-ban" aria-hidden="true"></i><p><a href="#">Blocking</a></p> 
+                        <br><br>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
